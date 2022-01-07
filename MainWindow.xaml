@@ -1,0 +1,176 @@
+﻿<Window x:Class="Zadanie_15_Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadanie_15_Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer Name="fdsv">
+            <FlowDocument>
+                <Paragraph FontSize="20">
+                    <Floater Width="250" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/bim.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    <Bold>Информационное моделирование зданий</Bold> (
+                    <Hyperlink NavigateUri="https://www.autodesk.ru/solutions/bim">BIM</Hyperlink>
+                    )
+                </Paragraph>
+                <Paragraph>
+                    <Italic>
+                        <Run Foreground="Blue">Информационное моделирование зданий</Run> (BIM) — это процесс, основанный на использовании интеллектуальных
+                        <Run Foreground="Red">3D-моделей</Run> .
+                    С помощью этой технологии специалисты по архитектуре и строительству (AEC) могут еще эффективнее
+                        <Span Background="LightGray">
+                            <Underline>планировать, проектировать, строить и эксплуатировать
+                            </Underline>
+                        </Span> здания и объекты инфраструктуры.
+                    </Italic>
+                </Paragraph>
+                <Paragraph>
+                    <Bold>
+                        Создание совместных, согласованных и полных проектов на основе моделей (обзор ПО)
+                    </Bold>
+                </Paragraph>
+
+
+                <Section FontSize="14">
+                    <Table>
+                        <Table.Columns>
+                            <TableColumn Width="0.5*"/>
+                            <TableColumn Width="*"/>
+                            <TableColumn Width="2*"/>
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Bold>Название ПО</Bold>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Bold>Для разделов</Bold>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Bold>Описание ПО</Bold>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Hyperlink NavigateUri="https://www.autodesk.ru/products/revit/overview">Autodesk Revit</Hyperlink>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <List MarkerStyle="Box">
+                                        <ListItem>
+                                            <Paragraph>
+                                                АР
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                КР
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                ОВ
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                ВК
+                                            </Paragraph>
+                                        </ListItem>
+                                    </List>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Программное обеспечение для информационного моделирования зданий (BIM) Revit® позволяет повысить эффективность
+                                    и точность на протяжении всего жизненного цикла проекта: от концептуального проектирования,
+                                    визуализации и анализа до изготовления и строительства.
+
+                                    Начните 3D-моделирование с высокой точностью и достоверностью.
+                                    Планы этажей, фасады и разрезы обновляются автоматически во время работы над моделью.
+                                    Revit позволяет автоматизировать выполнение рутинных и повторяющихся задач, благодаря чему
+                                    вы можете сосредоточиться на более важной работе.
+
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Hyperlink NavigateUri="https://www.autodesk.ru/products/civil-3d/overview#civil-3d-intro">Autodesk Civil3D</Hyperlink>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <List MarkerStyle="Box">
+                                        <ListItem>
+                                            <Paragraph>
+                                                ГП
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                ПОС
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                НВК
+                                            </Paragraph>
+                                        </ListItem>
+                                        <ListItem>
+                                            <Paragraph>
+                                                ТС
+                                            </Paragraph>
+                                        </ListItem>
+                                    </List>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Качественное проектирование и создание объектов инфраструктуры с помощью технологии Civil 3D.
+                                    Программа Civil 3D® поддерживает технологии информационного моделирования зданий (BIM) и
+                                    обладает встроенными функциями для черчения, проектирования и создания конструкторской документации.
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table>
+                </Section>
+
+                <BlockUIContainer>
+                    <StackPanel>
+                        <TextBlock Text="Все еще проектируешь по-старинке? Надоело постоянно исправлять кучу ошибок?"/>
+                        <Button Content="Перейти на BIM" Click="Button_Click_3"/>
+                    </StackPanel>
+                </BlockUIContainer>
+
+
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Открыть" Width="100" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
